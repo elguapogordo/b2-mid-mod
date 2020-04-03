@@ -1,0 +1,7 @@
+<h2>All Mechanics</h2>
+
+<section>
+  <% @mechanics.each do |mechanic| %>
+    <p><%= link_to mechanic.name, "/mechanics/#{mechanic.id}" %> - <%= mechanic.experience %> years of experience
+  <% end %>
+</section>
