@@ -7,3 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 mechanic1 = Mechanic.create(name: "Sam Mills", experience: 10)
 mechanic2 = Mechanic.create(name: "Kara Smith", experience: 11)
+park1 = AmusementPark.create(name: "Hershey Park", admissions: "$50.00")
+ride1 = park1.rides.create(name: "Storm Runner", rating: 7.8)
+ride2 = park1.rides.create(name: "Lightning Racer", rating: 8.0)
+ride3 = park1.rides.create(name: "The Great Bear", rating: 7.6)
